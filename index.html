@@ -82,6 +82,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
         }(document, "script", "vrlps-js", "o6gGWg5vQTtjzXlCXneTnjvPbJY");
     </script>
+    <script>
+  window.addEventListener("vl_ready", function(e) {
+    VL.onParticipation = function() {
+      ga("send", "event", "form", "submit", "viralloops");
+    };
+  });
+</script>
+
 
 
     <header class="navigation">

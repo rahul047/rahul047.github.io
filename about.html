@@ -37,6 +37,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JCP8JQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<script>
+    ! function(a, b, c, d, e) {
+        e = e || [];
+        var f, g = a.getElementsByTagName("head")[0];
+        if (!a.getElementById(c)) {
+            f = a.createElement(b), f.id = c, f.setAttribute("data-vrlps-ucid", d), f.setAttribute("data-vrlps-version", "2"), f.src = "https://app.viral-loops.com/popup_assets/js/vl_load.min.js", g.appendChild(f);
+            var h = document.createElement("link");
+            h.rel = "stylesheet", h.type = "text/css", h.href = "https://app.viral-loops.com/static/vl-loader.css", document.head.appendChild(h);
+            var i = document.createElement("div");
+            i.id = "vl-overlay", i.style.display = "none";
+            var j = document.createElement("div");
+            j.id = "vl-loader", i.appendChild(j), document.addEventListener("DOMContentLoaded", function(a) {
+                document.body.appendChild(i);
+                for (var b = document.getElementsByClassName("vrlps-trigger"), c = 0; c < b.length; c++) b[c].removeAttribute("href"), b[c].onclick = function() {
+                    document.getElementById("vl-overlay").style.display = "block"
+                };
+                for (var c = 0; c < e.length; c++) {
+                    if (window.InstapageUniqueVisit) {
+                        if (document.getElementById(e[c].replace(/^#/, ""))) var d = document.getElementById(e[c].replace(/^#/, "")).getElementsByTagName("div")[0].getElementsByTagName("a")[0].getElementsByTagName("div")[0]
+                    } else if (document.getElementById(e[c].replace(/^#/, ""))) var d = document.getElementById(e[c].replace(/^#/, ""));
+                    d && (d.removeAttribute("href"), d.className += " vl-ctaWithId", d.onclick = function() {
+                        document.getElementById("vl-overlay").style.display = "block"
+                    })
+                }
+                var f = document.querySelectorAll("[data-vl-widget='popupTrigger']");
+                [].forEach.call(f, function(a) {
+                    var b = document.createElement("div");
+                    b.className = "vl-embedded-cta-loader", a.appendChild(b)
+                })
+            })
+        }
+    }(document, "script", "vrlps-js", "o6gGWg5vQTtjzXlCXneTnjvPbJY");
+</script>
+<script>
+window.addEventListener("vl_ready", function(e) {
+VL.onParticipation = function() {
+  ga("send", "event", "form", "submit", "viralloops");
+};
+});
+</script>
 
   <header class="navigation">
       <div class="wrapper">
