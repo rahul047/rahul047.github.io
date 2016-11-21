@@ -70,13 +70,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     }(document, "script", "vrlps-js", "o6gGWg5vQTtjzXlCXneTnjvPbJY");
 </script>
+<!--Viral loops event tracking-->
 <script>
+
 window.addEventListener("vl_ready", function(e) {
+
 VL.onParticipation = function() {
-  ga("send", "event", "form", "submit", "viralloops");
-};
+
+ga("send", {
+
+hitType: "event",
+
+eventCategory: "form",
+
+eventAction: "submit",
+
+eventLabel: "viralloops"
+
 });
+
+};
+
+});
+
 </script>
+<!--viralloops event tracking code ends-->
 
   <header class="navigation">
       <div class="wrapper">

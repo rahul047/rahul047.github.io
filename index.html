@@ -48,9 +48,9 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JCP8JQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    <!--Viral Loops code-->
     <script>
-        ! function(a, b, c, d, e) {
+        !function(a, b, c, d, e) {
             e = e || [];
             var f, g = a.getElementsByTagName("head")[0];
             if (!a.getElementById(c)) {
@@ -82,13 +82,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
         }(document, "script", "vrlps-js", "o6gGWg5vQTtjzXlCXneTnjvPbJY");
     </script>
+    <!--Viral loops code ends-->
+    <!--Viral loops event tracking-->
     <script>
+
   window.addEventListener("vl_ready", function(e) {
+
     VL.onParticipation = function() {
-      ga("send", "event", "form", "submit", "viralloops");
+
+ga("send", {
+
+  hitType: "event",
+
+  eventCategory: "form",
+
+  eventAction: "submit",
+
+  eventLabel: "viralloops"
+
+});
+
     };
+
   });
+
 </script>
+  <!--viralloops event tracking code ends-->
 
 
 
