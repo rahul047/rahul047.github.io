@@ -71,28 +71,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }(document, "script", "vrlps-js", "o6gGWg5vQTtjzXlCXneTnjvPbJY");
 </script>
 <!--Viral loops event tracking-->
+
 <script>
-
-window.addEventListener("vl_ready", function(e) {
-
-VL.onParticipation = function() {
-
-ga("send", {
-
-hitType: "event",
-
-eventCategory: "form",
-
-eventAction: "submit",
-
-eventLabel: "viralloops"
-
-});
-
-};
-
-});
-
+  window.addEventListener("vl_ready", function(e) {
+    VL.onParticipation = function() {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Viral Loops',
+        eventAction: 'Joined Campaign'
+      });
+    };
+    });
 </script>
 <!--viralloops event tracking code ends-->
 
