@@ -95,6 +95,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
   <!--viralloops event tracking code ends-->
+  <!--fb pixel for viral-loops-->
+  <script>
+  window.addEventListener("vl_ready", function(e) {
+    VL.onParticipation = function() {
+      fbq("track", "Joined Viral Loops Campaign");
+    };
+  });
+</script>
+<!--fb pixel for viral-loops ends-->
     <header class="navigation">
         <div class="wrapper">
             <div class="logo">
