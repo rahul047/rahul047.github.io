@@ -81,29 +81,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
         }(document, "script", "vrlps-js", "o6gGWg5vQTtjzXlCXneTnjvPbJY");
     </script>
-    <!--Viral loops event tracking-->
-
-<script>
-  window.addEventListener("vl_ready", function(e) {
-    VL.onParticipation = function() {
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'Viral Loops',
-        eventAction: 'Joined Campaign'
-      });
-    };
-    });
-</script>
-  <!--viralloops event tracking code ends-->
-  <!--fb pixel for viral-loops-->
-  <script>
-  window.addEventListener("vl_ready", function(e) {
-    VL.onParticipation = function() {
-      fbq("track", "Joined Viral Loops Campaign");
-    };
-  });
-</script>
-<!--fb pixel for viral-loops ends-->
+    <!--Viral loops event tracking and fb pixel-->
+    <script>
+           window.addEventListener("vl_ready", function(e) {
+             VL.onParticipation = function() {
+             //google analytics
+               var trackerName = ga.getAll()[0].get('name');
+               ga(trackerName + '.send', {
+                 hitType: 'event',
+                 eventCategory: 'Viral Loops',
+                 eventAction: 'Joined Campaign'
+               });
+               //facebook pixel
+               fbq("track", "Joined Viral Loops Campaign");
+             };
+           });
+    </script>
+<!--fb pixel and google anayltics for viral-loops ends-->
     <header class="navigation">
         <div class="wrapper">
             <div class="logo">
